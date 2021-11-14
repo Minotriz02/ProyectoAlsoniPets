@@ -29,21 +29,25 @@ const TitleLogo = styled.h1`
                             `}; 
                         `
 
+const LinkNav = styled.a`
+                            margin:0rem 2rem;
+                        `
+
 const Navbar = _ => <NavbarContainer>
     <TitleContainer>
         <ImgLogo src={logo}></ImgLogo>
         <TitleLogo blue>Alsoni</TitleLogo><TitleLogo cyan>Pets</TitleLogo>
     </TitleContainer>
     <div>
-        <a>Perros</a>
-        <a>Gatos</a>
-        <a>Promociones</a>
-        <a>¿Quienes somos?</a>
-        <a>Contactanos</a>
+        <LinkNav>Perros</LinkNav>
+        <LinkNav>Gatos</LinkNav>
+        <LinkNav>Promociones</LinkNav>
+        <LinkNav>¿Quienes somos?</LinkNav>
+        <LinkNav>Contactanos</LinkNav>
     </div>
     <div>
         <Boton text="Entrar" color="blue"></Boton>
-        <Boton text="Registrarse" color="white"></Boton>
+        <Boton text="Registrarse" color="green"></Boton>
     </div>
 </NavbarContainer>;
 
