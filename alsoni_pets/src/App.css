@@ -16,3 +16,10 @@ h2{
 span{
   font-size: 2rem;
 }
+h3{
+  font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: 33px;
+}

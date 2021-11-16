@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 
 
-const Boton = function ({ text, color }) {
+const Boton = function ({ text, color , position}) {
     const BotonCon = styled.button`                           
                             padding: 1rem 3rem;
                             border: none;
@@ -27,6 +27,11 @@ const Boton = function ({ text, color }) {
                                 cursor: pointer;
                                 opacity: 80%;
                             }
+                            ${position === "left" && css`
+                                align-self: flex-end;
+                            `};
+
+
                         `
 
     return (
