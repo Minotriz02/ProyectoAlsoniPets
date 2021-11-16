@@ -9,24 +9,28 @@ const Boton = function ({ text, color }) {
                             border: none;
                             border-radius: 6px;
                             margin: 0rem 1rem;
-                            ${color == "blue" && css`
+                            ${color === "blue" && css`
                                 color: white;
                                 background-color:#124C5F;
                             `};
-                            ${color == "green" && css`
+                            ${color === "green" && css`
                                 color: #124C5F;
                                 background-color:#C7E7E1;
                             `};
-                            ${color == "white" && css`
+                            ${color === "white" && css`
                                 border: solid;
                                 color: #124C5F;
                                 background-color:white;
                                 border-color: #124C5F;
                             `};
+                            :hover{
+                                cursor: pointer;
+                                opacity: 80%;
+                            }
                         `
 
     return (
-        <BotonCon>
+        <BotonCon type="button" >
             {text}
         </BotonCon>);
 }

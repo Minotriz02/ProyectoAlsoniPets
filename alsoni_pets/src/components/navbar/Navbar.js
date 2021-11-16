@@ -31,6 +31,14 @@ const TitleLogo = styled.h1`
 
 const LinkNav = styled.a`
                             margin:0rem 2rem;
+                            text-decoration:none;
+                            color: #000;
+                            :hover{
+                                color: #00A3FF;
+                                border-bottom-style: solid;
+                                border-bottom-color: #00A3FF;
+                                border-bottom-width: 2px;
+                            }
                         `
 
 const Navbar = _ => <NavbarContainer>
@@ -39,11 +47,11 @@ const Navbar = _ => <NavbarContainer>
         <TitleLogo blue>Alsoni</TitleLogo><TitleLogo cyan>Pets</TitleLogo>
     </TitleContainer>
     <div>
-        <LinkNav>Perros</LinkNav>
-        <LinkNav>Gatos</LinkNav>
-        <LinkNav>Promociones</LinkNav>
-        <LinkNav>¿Quienes somos?</LinkNav>
-        <LinkNav>Contactanos</LinkNav>
+        <LinkNav href="">Perros</LinkNav>
+        <LinkNav href="">Gatos</LinkNav>
+        <LinkNav href="">Promociones</LinkNav>
+        <LinkNav href="">¿Quienes somos?</LinkNav>
+        <LinkNav href="">Contactanos</LinkNav>
     </div>
     <div>
         <Boton text="Entrar" color="blue"></Boton>
