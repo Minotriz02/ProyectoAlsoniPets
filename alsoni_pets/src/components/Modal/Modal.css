@@ -13,9 +13,10 @@
 
 .modal__dialog {
     background: #ddd;
-    padding: 10px;
-    width: 300px;
-    height: 400px;
+    padding: 3rem;
+    width: 600px;
+    height: 500px;
+    border-radius: 45px;
 }
 
 .modal-open  {
