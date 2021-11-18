@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar onClick={openRegister}></Navbar>
+      <Navbar onClickLog={openLogIn} onClickReg={openRegister}></Navbar>
       <Header text="El mejor alimento para tu perro esta aquí" alter="No descuides el alimento de tu perro"></Header>
       <Product> </Product>
       <FoodPart></FoodPart>

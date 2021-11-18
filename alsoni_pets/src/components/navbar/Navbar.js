@@ -42,7 +42,7 @@ const LinkNav = styled.a`
                             }
                         `
 
-const Navbar = function ({ onClick }) {
+const Navbar = function ({ onClickReg, onClickLog }) {
 
     return (<NavbarContainer>
         <TitleContainer>
@@ -58,8 +58,8 @@ const Navbar = function ({ onClick }) {
             <LinkNav href="">Contactanos</LinkNav>
         </div>
         <div>
-            <Boton text="Entrar" color="blue" onClick={onClick}></Boton>
-            <Boton text="Registrarse" color="green" onClick={onClick}></Boton>
+            <Boton text="Entrar" color="blue" onClick={onClickLog}></Boton>
+            <Boton text="Registrarse" color="green" onClick={onClickReg}></Boton>
         </div>
     </NavbarContainer>);
 }
