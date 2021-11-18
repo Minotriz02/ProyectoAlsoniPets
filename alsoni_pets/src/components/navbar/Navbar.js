@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import logo from './img/logo.jpeg';
 import Boton from "../botones/Boton";
 
+
 const NavbarContainer = styled.div`
                             display: flex;
                             align-items: center;
@@ -41,22 +42,26 @@ const LinkNav = styled.a`
                             }
                         `
 
-const Navbar = _ => <NavbarContainer>
-    <TitleContainer>
-        <ImgLogo src={logo}></ImgLogo>
-        <TitleLogo blue>Alsoni</TitleLogo><TitleLogo cyan>Pets</TitleLogo>
-    </TitleContainer>
-    <div>
-        <LinkNav href="">Perros</LinkNav>
-        <LinkNav href="">Gatos</LinkNav>
-        <LinkNav href="">Promociones</LinkNav>
-        <LinkNav href="">¿Quienes somos?</LinkNav>
-        <LinkNav href="">Contactanos</LinkNav>
-    </div>
-    <div>
-        <Boton text="Entrar" color="blue"></Boton>
-        <Boton text="Registrarse" color="green"></Boton>
-    </div>
-</NavbarContainer>;
+const Navbar = function ({ onClick }) {
+
+    return (<NavbarContainer>
+        <TitleContainer>
+
+            <ImgLogo src={logo}></ImgLogo>
+            <TitleLogo blue>Alsoni</TitleLogo><TitleLogo cyan>Pets</TitleLogo>
+        </TitleContainer>
+        <div>
+            <LinkNav href="">Perros</LinkNav>
+            <LinkNav href="">Gatos</LinkNav>
+            <LinkNav href="">Promociones</LinkNav>
+            <LinkNav href="">¿Quienes somos?</LinkNav>
+            <LinkNav href="">Contactanos</LinkNav>
+        </div>
+        <div>
+            <Boton text="Entrar" color="blue" onClick={onClick}></Boton>
+            <Boton text="Registrarse" color="green" onClick={onClick}></Boton>
+        </div>
+    </NavbarContainer>);
+}
 
 export default Navbar;

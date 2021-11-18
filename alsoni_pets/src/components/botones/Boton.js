@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 
 
-const Boton = function ({ text, color , position}) {
+const Boton = function ({ text, color, position, onClick }) {
     const BotonCon = styled.button`                           
                             padding: 1rem 3rem;
                             border: none;
@@ -35,7 +35,7 @@ const Boton = function ({ text, color , position}) {
                         `
 
     return (
-        <BotonCon type="button" >
+        <BotonCon type="button" onClick={onClick}>
             {text}
         </BotonCon>);
 }
